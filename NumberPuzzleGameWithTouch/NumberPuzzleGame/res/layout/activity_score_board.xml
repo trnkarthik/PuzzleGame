@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/scoreBoardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/scoreBoardTitle"
+        android:textColor="#FFFFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/CompletedGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/scoreBoardTitle"
+        android:layout_below="@+id/scoreBoardTitle"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/completedgames"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/forfeitedGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CompletedGames"
+        android:layout_below="@+id/CompletedGames"
+        android:layout_marginTop="50dp"
+        android:text="@string/forfeitedgames"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/minMoves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/forfeitedGames"
+        android:layout_below="@+id/forfeitedGames"
+        android:layout_marginTop="63dp"
+        android:text="@string/minmoves"
+        android:textColor="#FFFFFFFF" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maxmoves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/minMoves"
+        android:layout_below="@+id/minMoves"
+        android:layout_marginTop="19dp"
+        android:text="@string/maxmoves"
+        android:textColor="#FFFFFFFF" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/avgmoves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maxmoves"
+        android:layout_below="@+id/maxmoves"
+        android:layout_marginTop="22dp"
+        android:text="@string/avgmoves"
+        android:textColor="#FFFFFFFF" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/scoreBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/maxmoves"
+        android:layout_marginBottom="23dp"
+        android:text="@string/backButton" />
+
+    <TextView
+        android:id="@+id/CompletedGames_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompletedGames"
+        android:layout_alignBottom="@+id/CompletedGames"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/forfeitedGames_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/forfeitedGames"
+        android:layout_toRightOf="@+id/maxmoves"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/minMoves_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minMoves"
+        android:layout_alignLeft="@+id/forfeitedGames_num"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maxmoves_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avgmoves"
+        android:layout_alignLeft="@+id/minMoves_num"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/avgmoves_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/avgmoves"
+        android:layout_alignBottom="@+id/avgmoves"
+        android:layout_toRightOf="@+id/avgmoves"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompletedGames_num" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/forfeitedGames" />
+   
+</RelativeLayout>

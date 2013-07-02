@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/moves"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/num_of_moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/moves"
+        android:layout_toRightOf="@+id/moves"
+        android:text="@string/nummoves"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFFFF" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num_of_moves"
+        android:layout_alignBottom="@+id/num_of_moves"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/moves"
+        android:layout_marginBottom="17dp"
+        android:text="@string/score" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/score_button"
+        android:layout_below="@+id/reset_button"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFFFF" >
+
+        <TableRow
+            android:id="@+id/tr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgview1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgview4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgview7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+
+            <ImageView
+                android:id="@+id/imgview0"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/imgDesc"
+                android:onClick="onClick"
+                android:src="@drawable/block1" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/credits_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score_button"
+        android:layout_alignBottom="@+id/score_button"
+        android:layout_alignLeft="@+id/num_of_moves"
+        android:text="@string/credits" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/credits_button"
+        android:layout_alignBottom="@+id/credits_button"
+        android:layout_alignParentRight="true"
+        android:text="@string/exitgame" />
+
+</RelativeLayout>

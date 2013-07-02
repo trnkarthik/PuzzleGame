@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/GameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/GameTitle"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/GameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:contentDescription="@string/imgDesc"
+        android:src="@drawable/app_image" />
+
+    <Button
+        android:id="@+id/puzzle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GameTitle"
+        android:layout_alignRight="@+id/GameTitle"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="36dp"
+        android:text="@string/threepuzzle" />
+
+    <Button
+        android:id="@+id/puzzle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/puzzle3"
+        android:layout_alignRight="@+id/puzzle3"
+        android:layout_below="@+id/puzzle3"
+        android:layout_marginTop="24dp"
+        android:text="@string/fourpuzzle" />
+
+    <Button
+        android:id="@+id/creditsinmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="@string/credits" />
+
+    <Button
+        android:id="@+id/exitinmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/creditsinmain"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/exit" />
+
+</RelativeLayout>

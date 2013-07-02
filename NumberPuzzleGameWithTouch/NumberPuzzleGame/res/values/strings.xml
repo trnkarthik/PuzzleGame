@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">PuzzleGame</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="moves">Moves : </string>
+    <string name="nummoves">0</string>
+    <string name="reset">Reset</string>
+    <string name="score">Score</string>
+    <string name="exit">Exit</string>
+    <string name="imgDesc">Image View to hold images</string>
+    <string name="title_activity_credits">CreditsActivity</string>
+    <string name="credits">Credits</string>
+    <string name="author1">Raja Narasimha Karthik Tangirala</string>
+    <string name="author2">Prakash Venigella</string>
+    <string name="backButton">Back</string>
+    <string name="title_activity_score_board">ScoreBoardActivity</string>
+    <string name="avgmoves">Average Moves :</string>
+    <string name="minmoves">Minimum moves :</string>
+    <string name="maxmoves">Maximum moves :</string>
+    <string name="forfeitedgames">Forfeited Games :</string>
+    <string name="completedgames">Completed Games : </string>
+    <string name="scoreBoardTitle">Score Board</string>
+    <string name="GameTitle">Block Puzzle Game</string>
+    <string name="threepuzzle">3 * 3 Puzzle</string>
+    <string name="fourpuzzle">4 * 4 Puzzle</string>
+    <string name="title_activity_three_puzzle">ThreePuzzleActivity</string>
+    <string name="title_activity_four_puzzle">FourPuzzleActivity</string>
+    <string name="exitgame">Exit This Game</string>
+
+</resources>
